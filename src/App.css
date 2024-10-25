@@ -1,0 +1,104 @@
+.App {
+    text-align: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar {
+    position: fixed; /* 내비게이션 바를 고정 */
+    top: 0; /* 상단에 위치 */
+    left: 0; /* 왼쪽에 위치 */
+    right: 0; /* 오른쪽에 위치 */
+    background-color: white; /* 배경색 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    z-index: 1000; /* 다른 요소들 위에 표시 */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex; /* 수평 정렬 */
+    justify-content: center; /* 중앙 정렬 */
+}
+
+nav li {
+    margin: 0 30px; /* 항목 간격 */
+    padding: 15px;
+}
+
+nav li:hover {
+    cursor: pointer;
+    background-color: #ed7458;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+section {
+    padding-top: 70px; /* 내비게이션 바 높이만큼 여유 공간 추가 */
+    height: 100vh; /* 각 섹션 높이 */
+}
+
+.t {
+    display: flex;
+    justify-content: center;
+}
+
+.t3_1,
+.t3_2,
+.t3_3 {
+    padding: 80px;
+}
+
+.t3_1 {
+    padding-right: 0;
+}
+
+.info {
+    padding-bottom: 50px;
+    font-weight: bold;
+}
+
+.infoText {
+    font-size: 18px;
+    color: #333333;
+}
+
+#skills-div {
+    margin-left: 100px;
+}
+.skills-table > tbody > tr > td > img{
+    width: 100px;
+}
+.skills-table > tbody > tr > td:nth-child(even){
+    width: 500px;
+}
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table td {
+    padding: 5px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 20px;
+    background-color: #81C784; /* 숙련 바 색상 */
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+
