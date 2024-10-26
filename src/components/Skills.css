@@ -1,0 +1,89 @@
+#skills-div {
+    margin-left: 100px;
+}
+
+.skills-table > tbody > tr > td > img {
+    width: 100px;
+}
+
+.skills-table > tbody > tr > td:nth-child(even) {
+    width: 500px;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table td {
+    padding: 5px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 20px;
+    background-color: #81C784; /* 숙련 바 색상 */
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+
+    #skills-section {
+        height: 120vh;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    /* skills */
+    .progress-bar {
+        height: 100px; /* Set the height for vertical progress bar */
+        width: 20px; /* Narrow width for vertical bar */
+        display: flex; /* Use flexbox for centering */
+        align-items: flex-end; /* Align progress to the bottom */
+        margin: 0 auto; /* Center the progress bar */
+    }
+
+    .progress {
+        width: 100%; /* Full width of the container */
+        transition: height 0.5s ease; /* Smooth transition for height */
+    }
+
+    .skills-table td {
+        padding: 10px; /* Add padding for better spacing */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .skills-table td img {
+        margin-bottom: 10px; /* Add space between image and progress bar */
+    }
+
+    .skills-table {
+        display: flex;
+        flex-direction: column; /* Stack rows vertically */
+    }
+
+    .desk-top {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+    table{
+        padding: 100px;
+    }
+    .mobile {
+        display: none;
+    }
+}

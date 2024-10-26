@@ -5,7 +5,7 @@ import githubImage from '../img/github.jpg';
 
 function Info() {
     return (
-        <section style={{height: '30vh', background: '#f8f8f8', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', paddingTop: '20px'}}>
+        <section style={{height: '30vh', background: '#b0b0b0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', paddingTop: '20px'}}>
             <h2 style={{marginBottom: '20px'}}>Info</h2>
             <div style={{display: 'flex', gap: '20px'}}>
                 <a href="https://github.com/jeork" target="_blank" rel="noopener noreferrer">

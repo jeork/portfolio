@@ -1,0 +1,85 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-toggle {
+    display: none; /* 기본적으로 숨김 */
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 30px;
+    padding: 15px;
+}
+
+nav li:hover {
+    cursor: pointer;
+    background-color: #ed7458;
+    border-radius: 8px;
+    transition: all 0.7s;
+}
+
+section {
+    padding-top: 70px;
+    height: 100vh;
+}
+
+/* 모바일 환경을 위한 스타일 */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+
+.mobile-navbar {
+    position: fixed;
+    bottom: 20px; /* 하단에서 약간의 여유 */
+    left: 50%; /* 중앙 정렬 */
+    transform: translateX(-50%); /* 수평 중앙 정렬 */
+    z-index: 1000;
+    list-style-type: none;
+    display: flex; /* 수평 정렬 */
+    padding: 10px; /* 패딩 줄이기 */
+    background-color: rgba(255, 255, 255, 0.5); /* 반투명 배경 */
+    border-radius: 30px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+.mobile-navbar li {
+    margin: 0 5px; /* 항목 간격 조정 */
+}
+
+.mobile-navbar a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #333; /* 텍스트 색상 */
+    font-weight: bold; /* 볼드 텍스트 */
+    padding: 5px 10px; /* 패딩 줄이기 */
+    font-size: 14px; /* 폰트 크기 조정 */
+    border-radius: 20px; /* 둥근 버튼 모양 */
+    transition: background-color 0.3s ease; /* 부드러운 배경색 변화 */
+}
+
+.mobile-navbar a:hover {
+    background-color: #d76d5e;
+    color: white;
+}
+@media (min-width: 768px) {
+    .mobile-navbar {
+        display: none;
+    }
+}
